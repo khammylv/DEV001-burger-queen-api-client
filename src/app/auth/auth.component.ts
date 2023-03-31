@@ -68,7 +68,7 @@ export class AuthComponent {
     }else{
       sessionStorage.clear();
       this.authService.deleteToken()
-     console.log(this.authService.getToken())
+     
       Swal.fire({
         confirmButtonColor: '#FFC900',
         icon: 'error',
@@ -80,7 +80,68 @@ export class AuthComponent {
     
    
   }
- 
+
+  //Todo codigo para demo (cambiar en html para que funcione con api)
+ loginDemo(){
+  let uS: any = [];
+  if(this.loginForm.valid){
+    const userAuth = this.loginForm.value
+    //console.log(userAuth)
+    this.authService.getAllUsers2().subscribe({
+      next: (data: any) => {
+        //console.log(data.users)
+        const user = this.authService.filterUser(data.users, userAuth)
+        //console.log(user)
+        if (user) {
+          console.log(user.length)
+          if(user.length == 1){
+            //console.log(user)
+            user.forEach((use: any)=>{
+              //console.log(use)
+              uS = use
+            })
+           // console.log(uS.rol)
+           if(uS.rol === "mesero"){
+            sessionStorage.setItem('role', uS.rol);
+            this.authService.setToken(uS.id)
+            //this.authService.setToken(data.accessToken);
+            this.router.navigateByUrl('/products');
+           } 
+           if(uS.rol === "admin"){
+            this.authService.setToken(uS.id)
+            sessionStorage.setItem('role', uS.rol);
+            this.router.navigateByUrl('/admin');
+           }
+           if(uS.rol === "cocinero"){
+            this.authService.setToken(uS.id)
+            sessionStorage.setItem('role', uS.rol);
+            this.router.navigateByUrl('/cocina');
+           }
+          }else{
+            Swal.fire({
+              confirmButtonColor: '#FFC900',
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Algo ha salido mal. Revisa tu correo y/o contraseña!',
+              //text: 'Something went wrong!',
+            })
+          }
+        }
+      }
+    })
+  } else{
+    sessionStorage.clear();
+    this.authService.deleteToken()
+  
+    Swal.fire({
+      confirmButtonColor: '#FFC900',
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Formulario inválido!',
+      
+    })
+  }
+ }
   togglePasswordMode(input: any): any{
     input.type = input.type === 'password' ? 'text' : 'password';
      //console.log(this.elemento.type)

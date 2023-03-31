@@ -51,22 +51,12 @@ pageChangeEvent(event: number){
   @Output() newItemEvent = new EventEmitter<number>();    
   onClickMe(comida: number) {
    
-    this.newItemEvent.emit(comida);
+    return this.newItemEvent.emit(comida);
   
       
     
   }
-  arriba(){
-    let main = document.querySelector('.menu');
-    
-  //main.scroll(0, 0);
-    // window.scroll({
-    //   top: 0,
-    //   left: 0,
-    //   behavior: 'smooth',
-    // });
-    //document.body.scrollTop = 0;
-  }
+  
  
   
 }

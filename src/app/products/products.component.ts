@@ -11,15 +11,15 @@ export class ProductsComponent implements OnInit {
   constructor(private authService: AuthService ){}
   ngOnInit() {
     this.getUserLogged();
-   
+
   }
   getUserLogged() {
     //toDo cambiar a consulta por token
     const token = this.authService.getUserLogged()
     //console.log(this.authService.getUserLogged())
-    this.authService.getUser(token).subscribe(user => {
-      console.log(user);
-    });
+    // this.authService.getUser(token).subscribe(user => {
+    //   //console.log(user);
+    // });
   }
 
 }

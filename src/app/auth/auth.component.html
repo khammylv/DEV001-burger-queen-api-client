@@ -20,6 +20,7 @@
     </form>
   </div>
 -->
+<!--
 <section class="vh-100" style="background-color: #F7D625;">
   
   <div class="container-fluid h-custom" >
@@ -53,6 +54,36 @@
       </div>
     </div>
 </section>
+-->
+<section class="body-form">
 
+<section class="main">
 
+  <figure class="main__figure">
+      <img src="https://i.postimg.cc/K8MTfVZ1/chef-g71f06b4c1-1280.png" class="main__img">
+  </figure>
+
+  <div class="main__contact">
+
+      <h2 class="main__title">Burger Queen!</h2>
+      <p class="main__paragraph">Bienvenido, te extrañamos!</p>
+
+      <form class="main__form" [formGroup] = "loginForm" id="loginForm" (ngSubmit)="loginDemo()">
+
+          <input type="text" placeholder="Ingrese su correo" class="main__input" formControlName="email" id="email">
+
+          <input type="password"  #passwordEyeRegister formControlName="password" id="password" placeholder="Password" class="main__input">
+
+          <button class="ojito" type="button" (click)="togglePasswordMode(passwordEyeRegister)"><i class='bx bx-show'></i></button>
+
+          <button type="submit"  class="main__input main__input--send">INGRESAR</button>
+
+      </form>
+
+     
+
+  </div>
+
+</section>
+</section>
 

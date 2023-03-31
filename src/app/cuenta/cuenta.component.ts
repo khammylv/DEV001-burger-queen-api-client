@@ -3,6 +3,7 @@ import { ProductsService } from '../products.service/products.service';
 import * as moment from 'moment';
 import Swal from 'sweetalert2';
 import { OrdersService } from 'app/order.service/orders.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cuenta',
@@ -15,7 +16,8 @@ export class CuentaComponent implements OnInit {
 
   constructor(
     private productsService: ProductsService,
-    private orderService: OrdersService
+    private orderService: OrdersService,
+    private router: Router
   ) {}
 
   productsPedido: any = [];
@@ -27,15 +29,24 @@ export class CuentaComponent implements OnInit {
   total: number = 0;
   nombreCliente: any = '';
   ngOnInit() {
+    
     this.productsService.getCliente();
-    this.arrayItem();
-    this.mostrarProduct();
-
-    if (this.productsService.getCliente() != undefined) {
-      this.nombreCliente = this.productsService.getCliente();
-    }
-    localStorage.setItem('product', JSON.stringify(this.objetoelemDemo));
-    let local = JSON.parse(sessionStorage.getItem('products')!);
+    // if(this.arrayItem() != null) {
+    //   this.arrayItem();
+    // }
+      //this.arrayItem();
+      //this.mostrarProduct();
+      if(JSON.parse(sessionStorage.getItem('products')!) != null) {
+        this.arrayItem();
+        this.mostrarProduct()
+      }     
+    
+      if (this.productsService.getCliente() != undefined) {
+        this.nombreCliente = this.productsService.getCliente();
+        
+      }
+      localStorage.setItem('product', JSON.stringify(this.objetoelemDemo));
+      let local = JSON.parse(sessionStorage.getItem('products')!);  
    
   }
   mostrarProduct() {

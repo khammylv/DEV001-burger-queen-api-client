@@ -9,6 +9,7 @@ import { CookieService } from 'ngx-cookie-service';
 export class AuthService {
   
   constructor(private http: HttpClient, private cookies: CookieService) {}
+  //TODO codigo para API
   login(user: object ):Observable<any>{
     return this.http.post("http://localhost:3004/login", user);
   }
@@ -33,9 +34,9 @@ export class AuthService {
      // Aquí iría el endpoint para devolver el usuario para un token
    }
 
-   getAllUsers(){
-    return this.http.get('https://mocki.io/v1/e33dd6a6-dc7a-4b0a-a5c7-544ba6d0ff31')
-   }
+  //  getAllUsers(){
+  //   return this.http.get('https://mocki.io/v1/e33dd6a6-dc7a-4b0a-a5c7-544ba6d0ff31')
+  //  }
 
    showUsersJson(){
     return this.http.get(`http://localhost:3004/users`);
@@ -53,9 +54,13 @@ export class AuthService {
    deleteUserJson(id:any){
     return this.http.delete(`http://localhost:3004/users/${id}`);
    }
+ 
+
+
+  //TODO CODIGO PARA DEMO DESPLEGADA
 
    getAllUsers2(){
-    return this.http.get('https://api.npoint.io/fb087e778cabace91792')
+    return this.http.get('https://api.npoint.io/923ad69ed7baabe68197')
    }
 
    crearUserMul(item: any, item1: any){
@@ -80,7 +85,14 @@ export class AuthService {
   }
 
   setUserDemo(item: any){
-    return this.http.post(`https://api.npoint.io/fb087e778cabace91792`,item)
+    return this.http.post(`https://api.npoint.io/923ad69ed7baabe68197`,item)
   }
+
+ 
    
+  filterUser(item: any, item2: any) {
+    const user = []
+    let filterId = item.filter((user: any) => user.email === item2.email && user.password === item2.password);
+    return filterId;
+  }
 }

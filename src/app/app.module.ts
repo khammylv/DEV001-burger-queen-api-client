@@ -18,7 +18,6 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { ProductsComponent } from './products/products.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CocinaComponent } from './cocina/cocina.component';
 import { MenuComponent } from './menu/menu.component';
@@ -54,7 +53,6 @@ import { ModalUsersComponent } from './modal-users/modal-users.component';
     HomeComponent,
     AuthComponent,
     ProductsComponent,
-    PageNotFoundComponent,
     NavbarComponent,
     CocinaComponent,
     MenuComponent,

@@ -27,7 +27,7 @@ En resumen, la aplicación creada en Angular es una solución eficiente y efecti
 
 Estos fueron los prototipos utilizados en la aplicación.
 
-[Fire-Shot-Capture-074-burger-queen-Copy-Figma-www-figma-com.png](https://postimg.cc/tYJk2VTR)
+[![Fire-Shot-Capture-074-burger-queen-Copy-Figma-www-figma-com.png](https://i.postimg.cc/KvrWcPhT/Fire-Shot-Capture-074-burger-queen-Copy-Figma-www-figma-com.png)](https://postimg.cc/tYJk2VTR)
 
 [Fire-Shot-Capture-075-burger-queen-Copy-Figma-www-figma-com.png](https://postimg.cc/vxcnLfvp)
 

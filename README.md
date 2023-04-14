@@ -27,13 +27,13 @@ En resumen, la aplicación creada en Angular es una solución eficiente y efecti
 
 Estos fueron los prototipos utilizados en la aplicación.
 
-[![Fire-Shot-Capture-074-burger-queen-Copy-Figma-www-figma-com.png](https://i.postimg.cc/KvrWcPhT/Fire-Shot-Capture-074-burger-queen-Copy-Figma-www-figma-com.png)](https://postimg.cc/tYJk2VTR)
+[Fire-Shot-Capture-074-burger-queen-Copy-Figma-www-figma-com.png](https://postimg.cc/tYJk2VTR)
 
-[![Fire-Shot-Capture-075-burger-queen-Copy-Figma-www-figma-com.png](https://i.postimg.cc/kGyyCyRX/Fire-Shot-Capture-075-burger-queen-Copy-Figma-www-figma-com.png)](https://postimg.cc/vxcnLfvp)
+[Fire-Shot-Capture-075-burger-queen-Copy-Figma-www-figma-com.png](https://postimg.cc/vxcnLfvp)
 
-[![Fire-Shot-Capture-076-burger-queen-Copy-Figma-www-figma-com.png](https://i.postimg.cc/XJffKg8c/Fire-Shot-Capture-076-burger-queen-Copy-Figma-www-figma-com.png)](https://postimg.cc/qh764yWz)
+[Fire-Shot-Capture-076-burger-queen-Copy-Figma-www-figma-com.png](https://postimg.cc/qh764yWz)
 
-[![Fire-Shot-Capture-077-burger-queen-Copy-Figma-www-figma-com.png](https://i.postimg.cc/SNTWGRW5/Fire-Shot-Capture-077-burger-queen-Copy-Figma-www-figma-com.png)](https://postimg.cc/KRTkGZpr)
+[Fire-Shot-Capture-077-burger-queen-Copy-Figma-www-figma-com.png](https://postimg.cc/KRTkGZpr)
 
 
 ## 3. Modo de uso 

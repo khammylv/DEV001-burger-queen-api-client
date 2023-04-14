@@ -4,10 +4,10 @@
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Prototipos](#2-prototipos)
-* [3. Modo de uso (API)](#3-modo-de-uso-(API))
-* [4. Modo de uso (CLI)](#4-modo-de-uso-(CLI))
-* [5. Guía de instalación](#5-guía-de-instalación)
-* [6. Dependencias](#6-dependencias)
+* [3. Modo de uso ](#3-modo-de-uso)
+* [4. Claves de acceso ](#4-claves-de-acceso)
+* [5. Link de la aplicación](#5-Link-de-la-aplicación)
+
 
 ***
 
@@ -59,7 +59,9 @@ Al ingresar desde la cuenta de cocinero se pueden ver los pedidos en orden y se 
 * `cocina`:cocina@burguerqueen.com
 * `password`: 5550121
 
+## 5.  Link de la aplicación
 
+https://burgerqueen-b232e.web.app/home
 
 
 
